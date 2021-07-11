@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Jul 11 17:28:25 2021
+# Process ID: 17628
+# Current directory: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/prgrom_synth_1
+# Command line: vivado.exe -log prgrom.vds -mode batch -messageDb vivado.pb -notrace -source prgrom.tcl
+# Log file: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/prgrom_synth_1/prgrom.vds
+# Journal file: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/prgrom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source prgrom.tcl -notrace

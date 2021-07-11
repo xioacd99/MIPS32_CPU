@@ -1,7 +1,13 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 
-module ioread(reset,ior,switchctrl,ioread_data,ioread_data_switch);
+module ioread(
+    reset,
+    ior,
+    switchctrl,
+    ioread_data,
+    ioread_data_switch
+);
     input reset;			// 复位信号 
     input ior;              //  从控制器来的I/O读，
     input switchctrl;		//  从memorio经过地址高端线获得的拨码开关模块片选

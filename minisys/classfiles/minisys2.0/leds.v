@@ -1,7 +1,15 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 
-module leds(led_clk, ledrst, ledwrite, ledcs, ledaddr,ledwdata, ledout);
+module leds(
+    led_clk, 
+    ledrst, 
+    ledwrite, 
+    ledcs, 
+    ledaddr,
+    ledwdata, 
+    ledout
+);
     input led_clk;    		    // 时钟信号
     input ledrst; 		        // 复位信号
     input ledwrite;		       // 写信号

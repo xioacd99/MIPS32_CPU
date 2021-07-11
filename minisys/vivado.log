@@ -2,21 +2,1203 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Sat Jul 10 14:35:08 2021
-# Process ID: 26384
+# Start of session at: Sun Jul 11 16:20:31 2021
+# Process ID: 16452
 # Current directory: F:/.vscode/Github/MIPS32_CPU/minisys
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11248 F:\.vscode\Github\MIPS32_CPU\minisys\minisys.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1584 F:\.vscode\Github\MIPS32_CPU\minisys\minisys.xpr
 # Log file: F:/.vscode/Github/MIPS32_CPU/minisys/vivado.log
 # Journal file: F:/.vscode/Github/MIPS32_CPU/minisys\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project F:/.vscode/Github/MIPS32_CPU/minisys/minisys.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/27260/Documents/GitHub/MIPS32_CPU/minisys' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgmip32.coe'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 743.223 ; gain = 161.543
+file mkdir F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/new
+close [ open F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/new/a.v w ]
+add_files F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/new/a.v
+update_compile_order -fileset sources_1
+remove_files F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/new/a.v
+file delete -force F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/new/a.v
+close [ open F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/new/a.v w ]
+add_files F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/new/a.v
+update_compile_order -fileset sources_1
+remove_files F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/new/a.v
+file delete -force F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/new/a.v
+remove_files F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgmip32.coe
+file delete -force F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgmip32.coe
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.3 -module_name prgrom
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {16384} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {false} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips prgrom]
+generate_target {instantiation_template} [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgmip32.coe}] [get_ips prgrom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgmip32.coe' provided. It will be converted relative to IP Instance files 'prgmip32.coe'
+generate_target all [get_files  f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
+export_ip_user_files -of_objects [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+launch_run -jobs 4 prgrom_synth_1
+[Sun Jul 11 16:25:19 2021] Launched prgrom_synth_1...
+Run output will be captured here: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/prgrom_synth_1/runme.log
+export_simulation -of_objects [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -directory F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/sim_scripts -force -quiet
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ifetc32_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ifetc32_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/ifetc32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifetc32_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj ifetc32_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ifetc32_sim_behav xil_defaultlib.ifetc32_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.ifetc32_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ifetc32_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xsim.dir/ifetc32_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 11 16:28:26 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ifetc32_sim_behav -key {Behavioral:sim_1:Functional:ifetc32_sim} -tclbatch {ifetc32_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source ifetc32_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 50 ns  Iteration: 1  Process: /ifetc32_sim/Uifetch/instmem/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ifetc32_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 871.508 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ifetc32_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ifetc32_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/ifetc32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifetc32_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj ifetc32_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ifetc32_sim_behav xil_defaultlib.ifetc32_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.ifetc32_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ifetc32_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xsim.dir/ifetc32_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 11 16:31:50 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ifetc32_sim_behav -key {Behavioral:sim_1:Functional:ifetc32_sim} -tclbatch {ifetc32_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source ifetc32_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 50 ns  Iteration: 1  Process: /ifetc32_sim/Uifetch/instmem/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ifetc32_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 897.883 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top idcode32_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'idcode32_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj idcode32_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/idcode32_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idcode32_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot idcode32_sim_behav xil_defaultlib.idcode32_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Idecode32
+Compiling module xil_defaultlib.idcode32_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot idcode32_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xsim.dir/idcode32_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 11 16:39:01 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "idcode32_sim_behav -key {Behavioral:sim_1:Functional:idcode32_sim} -tclbatch {idcode32_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source idcode32_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'idcode32_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top exe_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'exe_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj exe_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/exe_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot exe_sim_behav xil_defaultlib.exe_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Executs32
+Compiling module xil_defaultlib.exe_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot exe_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xsim.dir/exe_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 11 16:40:56 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "exe_sim_behav -key {Behavioral:sim_1:Functional:exe_sim} -tclbatch {exe_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source exe_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'exe_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.3 -module_name ram
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {16384} CONFIG.Enable_A {Always_Enabled} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips ram]
+generate_target {instantiation_template} [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ram'...
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/dmem32.coe}] [get_ips ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/dmem32.coe' provided. It will be converted relative to IP Instance files 'dmem32.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+generate_target all [get_files  f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ram'...
+export_ip_user_files -of_objects [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+launch_run -jobs 4 ram_synth_1
+[Sun Jul 11 16:45:30 2021] Launched ram_synth_1...
+Run output will be captured here: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/ram_synth_1/runme.log
+export_simulation -of_objects [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -directory F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/sim_scripts -force -quiet
+set_property top ram_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ram_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ram_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj ram_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ram_sim_behav xil_defaultlib.ram_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ram_arch of entity xil_defaultlib.ram [ram_default]
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.ram_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ram_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xsim.dir/ram_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 11 16:46:12 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ram_sim_behav -key {Behavioral:sim_1:Functional:ram_sim} -tclbatch {ram_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source ram_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 300 ns  Iteration: 1  Process: /ram_sim/Uram/ram/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ram_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 935.695 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top ControlIO32_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top minisys_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Coe_File {F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgmip32.coe}] [get_ips prgrom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgmip32.coe' provided. It will be converted relative to IP Instance files 'prgmip32.coe'
+generate_target all [get_files  f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
+export_ip_user_files -of_objects [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -force -quiet
+reset_run prgrom_synth_1
+launch_run -jobs 4 prgrom_synth_1
+[Sun Jul 11 17:28:24 2021] Launched prgrom_synth_1...
+Run output will be captured here: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/prgrom_synth_1/runme.log
+export_simulation -of_objects [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -directory F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/sim_scripts -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Coe_File {F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/dmem32.coe}] [get_ips ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/dmem32.coe' provided. It will be converted relative to IP Instance files 'dmem32.coe'
+generate_target all [get_files  f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ram'...
+export_ip_user_files -of_objects [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -no_script -force -quiet
+reset_run ram_synth_1
+launch_run -jobs 4 ram_synth_1
+[Sun Jul 11 17:28:38 2021] Launched ram_synth_1...
+Run output will be captured here: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/ram_synth_1/runme.log
+export_simulation -of_objects [get_files f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -directory F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/sim_scripts -force -quiet
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2458] undeclared symbol memtoreg, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:68]
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:60]
+ERROR: [VRFC 10-1040] module minisys ignored due to previous errors [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:3]
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-99] Step results log file:'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2458] undeclared symbol memtoreg, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:68]
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:60]
+ERROR: [VRFC 10-1040] module minisys ignored due to previous errors [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:3]
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-99] Step results log file:'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2458] undeclared symbol memtoreg, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:68]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot minisys_sim_behav xil_defaultlib.minisys_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-426] cannot find port MemtoReg on this module [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:60]
+ERROR: [VRFC 10-426] cannot find port MemtoReg on this module [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:68]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port led2N4 [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v:32]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port ledout [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:155]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switchrdata [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:164]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switch_i [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:165]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 936.527 ; gain = 0.000
+INFO: [USF-XSim-99] Step results log file:'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 936.527 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2458] undeclared symbol MemorIOtoReg, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:68]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot minisys_sim_behav xil_defaultlib.minisys_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port led2N4 [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v:32]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port ledout [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:155]
+WARNING: [VRFC 10-142] switchrdata was previously declared with a different range [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v:21]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switchrdata [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:164]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switch_i [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:165]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.Idecode32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.Executs32
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ram_arch of entity xil_defaultlib.ram [ram_default]
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.memorio
+Compiling module xil_defaultlib.ioread
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.minisys
+Compiling module xil_defaultlib.minisys_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot minisys_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xsim.dir/minisys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 11 17:31:04 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1060.152 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch {minisys_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source minisys_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 0 ps  Iteration: 2  Process: /minisys_sim/u/memory/ram/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 110 ns  Iteration: 2  Process: /minisys_sim/u/ifetch/instmem/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'minisys_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1066.543 ; gain = 6.391
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2458] undeclared symbol MemorIOtoReg, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:68]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot minisys_sim_behav xil_defaultlib.minisys_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port led2N4 [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v:32]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port ledout [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:155]
+WARNING: [VRFC 10-142] switchrdata was previously declared with a different range [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v:21]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switchrdata [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:164]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switch_i [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:165]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.Idecode32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.Executs32
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ram_arch of entity xil_defaultlib.ram [ram_default]
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.memorio
+Compiling module xil_defaultlib.ioread
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.minisys
+Compiling module xil_defaultlib.minisys_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot minisys_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xsim.dir/minisys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 11 17:32:21 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1085.316 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch {minisys_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source minisys_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 0 ps  Iteration: 2  Process: /minisys_sim/u/memory/ram/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 110 ns  Iteration: 2  Process: /minisys_sim/u/ifetch/instmem/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'minisys_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1085.316 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2458] undeclared symbol MemorIOtoReg, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:68]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot minisys_sim_behav xil_defaultlib.minisys_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port led2N4 [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v:32]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port ledout [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:155]
+WARNING: [VRFC 10-142] switchrdata was previously declared with a different range [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v:21]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switchrdata [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:164]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switch_i [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:165]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.Idecode32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.Executs32
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ram_arch of entity xil_defaultlib.ram [ram_default]
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.memorio
+Compiling module xil_defaultlib.ioread
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.minisys
+Compiling module xil_defaultlib.minisys_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot minisys_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xsim.dir/minisys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 11 17:38:53 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1100.164 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch {minisys_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source minisys_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 0 ps  Iteration: 2  Process: /minisys_sim/u/memory/ram/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 110 ns  Iteration: 2  Process: /minisys_sim/u/ifetch/instmem/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'minisys_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1100.164 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Jul 10 15:40:01 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 11 17:40:16 2021...

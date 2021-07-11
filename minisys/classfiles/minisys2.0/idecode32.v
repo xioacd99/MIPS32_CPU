@@ -1,8 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 
-module Idecode32(read_data_1,read_data_2,Instruction,read_data,ALU_result,
-                 Jal,RegWrite,MemorIOtoReg,RegDst,Sign_extend,clock,reset,opcplus4);
+module Idecode32(
+    read_data_1,
+    read_data_2,
+    Instruction,
+    read_data,
+    ALU_result,
+    Jal,
+    RegWrite,
+    MemorIOtoReg,
+    RegDst,
+    Sign_extend,
+    clock,
+    reset,
+    opcplus4
+ );
     output[31:0] read_data_1;               // 输出的第一操作数
     output[31:0] read_data_2;               // 输出的第二操作数
     input[31:0]  Instruction;               // 取指单元来的指令

@@ -1,7 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 
-module memorio(caddress,address,memread,memwrite,ioread,iowrite,mread_data,ioread_data,wdata,rdata,write_data,LEDCtrl,SwitchCtrl);
+module memorio(
+    caddress,
+    address,
+    memread,
+    memwrite,
+    ioread,
+    iowrite,
+    mread_data,
+    ioread_data,
+    wdata,
+    rdata,
+    write_data,
+    LEDCtrl,
+    SwitchCtrl
+);
     input[31:0] caddress;       // from alu_result in executs32
     input memread;				// read memory, from control32
     input memwrite;				// write memory, from control32

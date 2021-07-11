@@ -1,0 +1,6 @@
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 0 ps  Iteration: 2  Process: /minisys_sim/u/memory/ram/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 110 ns  Iteration: 2  Process: /minisys_sim/u/ifetch/instmem/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd

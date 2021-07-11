@@ -1,7 +1,15 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 
-module switchs(switclk, switrst, switchread, switchcs,switchaddr, switchrdata, switch_i);
+module switchs(
+    switclk, 
+    switrst, 
+    switchread, 
+    switchcs,
+    switchaddr, 
+    switchrdata, 
+    switch_i
+);
     input switclk;			       //  时钟信号
     input switrst;			       //  复位信号
     input switchcs;			      //从memorio来的，由低至高位形成的switch片选信号  !!!!!!!!!!!!!!!!!
