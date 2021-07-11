@@ -1,7 +1,0 @@
-Running: xsim.dir/minisys_sim_behav/xsimk.exe -simmode gui -wdb minisys_sim_behav.wdb -simrunnum 0 -socket 1974
-Design successfully loaded
-Design Loading Memory Usage: 31396 KB (Peak: 31396 KB)
-Design Loading CPU Usage: 124 ms
-Simulation completed
-Simulation Memory Usage: 32344 KB (Peak: 32344 KB)
-Simulation CPU Usage: 124 ms

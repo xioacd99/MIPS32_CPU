@@ -1,6 +1,6 @@
 // RAM_set.v
 `timescale 1ns / 1ps
-// 0 1 2 3 4 5 6 7 8 9 + - = [ ] ' ' #
+// 0 1 2 3 4 5 6 7 8 9 + - = [ ] ' '
 module RAM_set(
 	input clk,
 	input rst,
@@ -179,7 +179,7 @@ module RAM_set(
                                       col5 <= 8'b1111_1111;
                                       col6 <= 8'b0000_0000;
                                  end
-                       4'b1110: // " "
+                       4'b1111: // " "
                                  begin
                                       col0 <= 8'b0000_0000;
                                       col1 <= 8'b0000_0000;
@@ -189,16 +189,7 @@ module RAM_set(
                                       col5 <= 8'b0000_0000;
                                       col6 <= 8'b0000_0000;
                                   end
-                            4'b1111: // "#"
-                                  begin
-                                       col0 <= 8'b0000_0000;
-                                       col1 <= 8'b0010_0100;
-                                       col2 <= 8'b0111_1110;
-                                       col3 <= 8'b0010_0100;
-                                       col4 <= 8'b0111_1110;
-                                       col5 <= 8'b0010_0100;
-                                       col6 <= 8'b0000_0000;
-                                 end
+                   
 					endcase
 				end
 		end

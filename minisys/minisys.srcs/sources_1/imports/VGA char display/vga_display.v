@@ -10,13 +10,10 @@ module vga_char_display(
     output reg [3:0] b,  
     output hs,  
     output vs  
-    ); 
-          
-    wire pclk;  
-    reg [1:0] count;  
+    );   
+    
     reg [9:0] hcount, vcount;  
     wire [7:0] p[55:0];   
-    
     
     reg [3:0] input_data1;
     reg [3:0] input_data2;
@@ -26,27 +23,34 @@ module vga_char_display(
     reg [3:0] input_data6;
     reg [3:0] input_data7;
     reg [3:0] input_data8;
-    // 显示器可显示区域  
-    parameter UP_BOUND = 31;  
-    parameter DOWN_BOUND = 510;  
-    parameter LEFT_BOUND = 144;  
-    parameter RIGHT_BOUND = 783;  
   
-    // 屏幕中央两个字符的显示区域  
-    parameter up_pos = 267;  
-    parameter down_pos = 274;  
-    parameter left_pos = 422;  
-    parameter right_pos = 477;  
+    //640*480 60HZ
+    //基准时钟长度
+    parameter hsw = 96;
+    parameter hbp = 48;
+    parameter haw = 640;
+    parameter hfp = 16;
+    //行长度 也即是 hsw+...+hfp = 800个基准时钟长度
+    parameter vsw = 2;
+    parameter vbp = 33;
+    parameter vaw = 480;
+    parameter vfp = 10;
     
-         // 获得像素时钟25MHz  
-   assign pclk = count[1];  
-   always @ (posedge clk or posedge rst)  
-   begin  
-       if (rst)  
-           count <= 0;  
-       else  
-           count <= count+1;  
-   end  
+    //可显示区间
+    parameter left = hsw + hbp;
+    parameter right = hsw + hbp + haw;
+    parameter hframe = hsw + hbp + haw + hfp;
+    
+    parameter top = vsw + vbp;
+    parameter bottom = vsw + vbp + vaw;
+    parameter vframe =  vsw + vbp + vaw + vfp;
+    
+    
+    parameter show_h = 0 + left;
+    parameter show_v = 0 +  top;
+    parameter show_width = 56;
+    parameter show_height = 8;
+    
     
     //assign the input_data according to CPU_outcome
     always @(posedge clk)
@@ -60,7 +64,6 @@ module vga_char_display(
         input_data7 <= CPU_outcome[7:4];
         input_data8 <= CPU_outcome[3:0];
     end
-    //assign input_data1 = {{2'b00}, {CPU_outcome[31:28]}};
   
     RAM_set u_ram_1 (  
         .clk(clk),  
@@ -158,27 +161,27 @@ module vga_char_display(
              .col5(p[54]),  
              .col6(p[55])  
              ); 
-      
+     
     // 列计数与行同步  
-    assign hs = (hcount < 96) ? 0 : 1;              // 行同步信号宽度 96
-    always @ (posedge pclk or posedge rst)          // hcount in [0,799]
+    assign hs = (hcount < hsw) ? 0 : 1;             
+    always @ (posedge clk or posedge rst)
     begin  
         if (rst)  
             hcount <= 0;  
-        else if (hcount == 799)  
+        else if (hcount == hframe-1)  
             hcount <= 0;  
         else  
             hcount <= hcount+1;  
     end  
       
     // 行计数与场同步  
-    assign vs = (vcount < 2) ? 0 : 1;               // 场同步信号宽度 2
-    always @ (posedge pclk or posedge rst)          // hcount in [0,520]
+    assign vs = (vcount < vsw) ? 0 : 1;             
+    always @ (posedge clk or posedge rst)          
     begin  
         if (rst)  
             vcount <= 0;  
-        else if (hcount == 799) begin       
-            if (vcount == 520)  
+        else if (hcount == hframe-1) begin       
+            if (vcount == vframe-1)  
                 vcount <= 0;  
             else  
                 vcount <= vcount+1;  
@@ -188,18 +191,18 @@ module vga_char_display(
     end  
       
     // 设置显示信号值  
-    always @ (posedge pclk or posedge rst)  
+    always @ (posedge clk or posedge rst)  
     begin  
         if (rst) begin  
             r <= 0;  
             g <= 0;  
             b <= 0;  
         end  
-        else if (vcount>=UP_BOUND && vcount<=DOWN_BOUND  
-                && hcount>=LEFT_BOUND && hcount<=RIGHT_BOUND) begin  
-            if (vcount>=up_pos && vcount<=down_pos  
-                    && hcount>=left_pos && hcount<=right_pos) begin  
-                if (p[hcount-left_pos][vcount-up_pos]) begin  
+        else if (vcount>=top && vcount<=bottom  
+                && hcount>=left && hcount<=right) begin  
+            if (vcount>=show_v && vcount<=show_v + show_height  
+                    && hcount>=show_h && hcount<=show_h+show_width) begin  
+                if (p[hcount-left][vcount-top]) begin  
                     r <= 4'b1111;  
                     g <= 4'b1111;  
                     b <= 4'b1111;  
