@@ -1,0 +1,7 @@
+Running: xsim.dir/simu_behav/xsimk.exe -simmode gui -wdb simu_behav.wdb -simrunnum 0 -socket 10479
+Design successfully loaded
+Design Loading Memory Usage: 23892 KB (Peak: 23892 KB)
+Design Loading CPU Usage: 155 ms
+Simulation completed
+Simulation Memory Usage: 24376 KB (Peak: 24376 KB)
+Simulation CPU Usage: 155 ms

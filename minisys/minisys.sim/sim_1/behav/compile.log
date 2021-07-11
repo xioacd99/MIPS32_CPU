@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+ERROR: [VRFC 10-1412] syntax error near ¡ [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v:28]
+ERROR: [VRFC 10-91] Alu_resultHigh is not declared [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v:3]
+ERROR: [VRFC 10-1040] module control32 ignored due to previous errors [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v:3]

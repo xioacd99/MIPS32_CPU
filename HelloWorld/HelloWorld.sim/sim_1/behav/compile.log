@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DOWNLOAD/HelloWorld/HelloWorld.srcs/sources_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DOWNLOAD/HelloWorld/HelloWorld.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DOWNLOAD/HelloWorld/HelloWorld.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

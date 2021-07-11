@@ -17,6 +17,7 @@ module control32(Opcode,Jrn,Function_opcode,Alu_resultHigh,RegDST,ALUSrc,MemorIO
     output       Sftmd;     	//  为1表明是移位指令
     output[1:0]  ALUOp;	//  是R-类型或I_format=1时位1为1, beq、bne指令则位0为1
    
+    // 为 1 分别表示是哪一种指令
     wire Jmp,I_format,Jal,Branch,nBranch;
     wire R_format,Lw,Sw;
     
