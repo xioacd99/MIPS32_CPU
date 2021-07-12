@@ -1,0 +1,655 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Jul 12 20:30:33 2021
+# Process ID: 9160
+# Current directory: F:/.vscode/Github/MIPS32_CPU/minisys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17532 F:\.vscode\Github\MIPS32_CPU\minisys\minisys.xpr
+# Log file: F:/.vscode/Github/MIPS32_CPU/minisys/vivado.log
+# Journal file: F:/.vscode/Github/MIPS32_CPU/minisys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/.vscode/Github/MIPS32_CPU/minisys/minisys.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 826.762 ; gain = 140.082
+set_property top minisys_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+generate_target Simulation [get_files F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+export_ip_user_files -of_objects [get_files F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -force -quiet
+generate_target Simulation [get_files F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ram'...
+export_ip_user_files -of_objects [get_files F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -no_script -force -quiet
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-25] Exported 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2458] undeclared symbol MemorIOtoReg, assumed default net type wire [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto c180edc3119f49e5a7693aeac972597b --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot minisys_sim_behav xil_defaultlib.minisys_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port led2N4 [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v:14]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port switch2N4 [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v:15]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port ledout [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:160]
+WARNING: [VRFC 10-142] switchrdata was previously declared with a different range [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v:20]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switchrdata [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:169]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switch_i [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:170]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.Idecode32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.Executs32
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ram_arch of entity xil_defaultlib.ram [ram_default]
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.memorio
+Compiling module xil_defaultlib.ioread
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.minisys
+Compiling module xil_defaultlib.minisys_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot minisys_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav/xsim.dir/minisys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul 12 21:01:38 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 924.363 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch {minisys_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source minisys_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 0 ps  Iteration: 2  Process: /minisys_sim/u/memory/ram/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 110 ns  Iteration: 2  Process: /minisys_sim/u/ifetch/instmem/U0/native_mem_module/mem_module/line__3418  File: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'minisys_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 924.363 ; gain = 0.000
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/ram_set.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/ram_set.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/vga_display.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/vga_display.v:1]
+[Mon Jul 12 21:01:59 2021] Launched synth_1...
+Run output will be captured here: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/cpuclk_synth_1/cpuclk.dcp' for cell 'cpuclk'
+INFO: [Project 1-454] Reading design checkpoint 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/prgrom_synth_1/prgrom.dcp' for cell 'ifetch/instmem'
+INFO: [Project 1-454] Reading design checkpoint 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/ram_synth_1/ram.dcp' for cell 'memory/ram'
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'cpuclk/inst'
+Finished Parsing XDC File [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'cpuclk/inst'
+Parsing XDC File [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'cpuclk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.xdc:56]
+get_clocks: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1603.539 ; gain = 476.633
+Finished Parsing XDC File [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'cpuclk/inst'
+Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/cpuclk_synth_1/cpuclk.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/prgrom_synth_1/prgrom.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/ram_synth_1/ram.dcp'
+INFO: [Opt 31-140] Inserted 16 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:46 ; elapsed = 00:00:37 . Memory (MB): peak = 1631.859 ; gain = 707.496
+close_design
+set_property top control32 [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/ram_set.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/ram_set.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/vga_display.v" into library work [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/vga_display.v:1]
+[Mon Jul 12 21:13:39 2021] Launched synth_1...
+Run output will be captured here: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[15]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[14]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[13]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[12]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[11]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[10]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[9]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[8]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[7]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[6]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[5]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[4]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[15]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[14]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[13]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[12]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[11]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[10]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[9]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[8]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[7]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[6]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[5]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[4]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[15]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[14]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[13]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[12]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[11]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[10]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[9]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[8]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[7]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[6]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[5]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[4]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2N4[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[15]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[14]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[13]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[12]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[11]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[10]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[9]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[8]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[7]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[6]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[5]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[4]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:106]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:106]
+Finished Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 12 21:21:00 2021...

@@ -1,34 +1,13 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2016/07/28 21:56:12
-// Design Name: 
-// Module Name: control32_sim
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-
-module control32_sim(
-    );
+module control32_sim();
         // input
-        reg[5:0]   Opcode = 6'b000000;            // À´×ÔÈ¡Ö¸µ¥Ôªinstruction[31..26]
-        reg[5:0]   Function_opcode  = 6'b100000;      // r-form instructions[5..0]  //ADD
+        reg[5:0]   Opcode = 6'b000000;                // ï¿½ï¿½ï¿½ï¿½È¡Ö¸ï¿½ï¿½Ôªinstruction[31..26]
+        reg[5:0]   Function_opcode  = 6'b100000;      // r-form instructions[5..0]  ADD
         // output
         wire       Jrn;
         wire       RegDST;
-        wire       ALUSrc;            // ¾ö¶¨µÚ¶þ¸ö²Ù×÷ÊýÊÇ¼Ä´æÆ÷»¹ÊÇÁ¢¼´Êý
+        wire       ALUSrc;                           // ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¼Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         wire       MemtoReg;
         wire       RegWrite;
         wire       MemWrite;
@@ -40,14 +19,25 @@ module control32_sim(
         wire       Sftmd;
         wire[1:0]  ALUOp;
         
-    control32 Uctrl(Opcode,Function_opcode,
-                    Jrn,RegDST,ALUSrc,
-                    MemtoReg,RegWrite,
-                    MemWrite,Branch,
-                    nBranch,Jmp,Jal,I_format,
-                    Sftmd,ALUOp);
+    control32 Uctrl(
+        Opcode,
+        Function_opcode,
+        Jrn,
+        RegDST,
+        ALUSrc,
+        MemtoReg,
+        RegWrite,
+        MemWrite,
+        Branch,
+        nBranch,
+        Jmp,
+        Jal,
+        I_format,
+        Sftmd,
+        ALUOp
+    );
     initial begin
-        #200     Function_opcode  = 6'b001000;               // JR
+        #200    Function_opcode  = 6'b001000;               // JR
         #200    Opcode = 6'b001000;                         //  ADDI
         #200    Opcode = 6'b100011;                         //  LW
         #200    Opcode = 6'b101011;                         //  SW
@@ -55,6 +45,10 @@ module control32_sim(
         #200    Opcode = 6'b000101;                         //  BNE
         #250    Opcode = 6'b000010;                         //  JMP
         #200    Opcode = 6'b000011;                         //  JAL
-        #250    begin Opcode = 6'b000000; Function_opcode  = 6'b000010; end;//  SRL
+        #250                                                //  SRL
+            begin 
+                Opcode = 6'b000000; 
+                Function_opcode  = 6'b000010; 
+            end;
     end         
 endmodule

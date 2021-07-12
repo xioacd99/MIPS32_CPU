@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
-// vga_char_display.v  
-  
+
 module vga_char_display(  
     input clk,  
     input rst,  
@@ -10,7 +9,7 @@ module vga_char_display(
     output reg [3:0] b,  
     output hs,  
     output vs  
-    );   
+);   
     
     reg [9:0] hcount, vcount;  
     wire [7:0] p[55:0];   
@@ -23,20 +22,18 @@ module vga_char_display(
     reg [3:0] input_data6;
     reg [3:0] input_data7;
     reg [3:0] input_data8;
-  
-    //640*480 60HZ
-    //基准时钟长度
+
+    // 640*480 60HZ
     parameter hsw = 96;
     parameter hbp = 48;
     parameter haw = 640;
     parameter hfp = 16;
-    //行长度 也即是 hsw+...+hfp = 800个基准时钟长度
+    
     parameter vsw = 2;
     parameter vbp = 33;
     parameter vaw = 480;
     parameter vfp = 10;
     
-    //可显示区间
     parameter left = hsw + hbp;
     parameter right = hsw + hbp + haw;
     parameter hframe = hsw + hbp + haw + hfp;
@@ -52,7 +49,7 @@ module vga_char_display(
     parameter show_height = 8;
     
     
-    //assign the input_data according to CPU_outcome
+    // assign the input_data according to CPU_outcome
     always @(posedge clk)
     begin
         input_data1 <= CPU_outcome[31:28];
@@ -64,7 +61,7 @@ module vga_char_display(
         input_data7 <= CPU_outcome[7:4];
         input_data8 <= CPU_outcome[3:0];
     end
-  
+
     RAM_set u_ram_1 (  
         .clk(clk),  
         .rst(rst),  
@@ -89,7 +86,7 @@ module vga_char_display(
         .col5(p[12]),  
         .col6(p[13])  
     ); 
-  RAM_set u_ram_3 (  
+    RAM_set u_ram_3 (  
         .clk(clk),  
         .rst(rst),  
         .data(input_data3),  
@@ -100,69 +97,69 @@ module vga_char_display(
         .col4(p[18]),  
         .col5(p[19]),  
         .col6(p[20])  
-       );
- RAM_set u_ram_4 (  
-       .clk(clk),  
-       .rst(rst),  
-       .data(input_data4),  
-       .col0(p[21]),  
-       .col1(p[22]),  
-       .col2(p[23]),  
-       .col3(p[24]),  
-       .col4(p[25]),  
-       .col5(p[26]),  
-       .col6(p[27])  
-       ); 
- RAM_set u_ram_5 (  
-              .clk(clk),  
-              .rst(rst),  
-              .data(input_data5),  
-              .col0(p[28]),  
-              .col1(p[29]),  
-              .col2(p[30]),  
-              .col3(p[31]),  
-              .col4(p[32]),  
-              .col5(p[33]),  
-              .col6(p[34])  
-          );  
-          RAM_set u_ram_6 (  
-              .clk(clk),  
-              .rst(rst),  
-              .data(input_data6),  
-              .col0(p[35]),  
-              .col1(p[36]),  
-              .col2(p[37]),  
-              .col3(p[38]),  
-              .col4(p[39]),  
-              .col5(p[40]),  
-              .col6(p[41])  
-          ); 
-        RAM_set u_ram_7 (  
-              .clk(clk),  
-              .rst(rst),  
-              .data(input_data7),  
-              .col0(p[42]),  
-              .col1(p[43]),  
-              .col2(p[44]),  
-              .col3(p[45]),  
-              .col4(p[46]),  
-              .col5(p[47]),  
-              .col6(p[48])  
-             );
-       RAM_set u_ram_8 (  
-             .clk(clk),  
-             .rst(rst),  
-             .data(input_data8),  
-             .col0(p[49]),  
-             .col1(p[50]),  
-             .col2(p[51]),  
-             .col3(p[52]),  
-             .col4(p[53]),  
-             .col5(p[54]),  
-             .col6(p[55])  
-             ); 
-     
-    // 列计数与行同步  
+    );
+    RAM_set u_ram_4 (  
+        .clk(clk),  
+        .rst(rst),  
+        .data(input_data4),  
+        .col0(p[21]),  
+        .col1(p[22]),  
+        .col2(p[23]),  
+        .col3(p[24]),  
+        .col4(p[25]),  
+        .col5(p[26]),  
+        .col6(p[27])  
+    ); 
+    RAM_set u_ram_5 (  
+        .clk(clk),  
+        .rst(rst),  
+        .data(input_data5),  
+        .col0(p[28]),  
+        .col1(p[29]),  
+        .col2(p[30]),  
+        .col3(p[31]),  
+        .col4(p[32]),  
+        .col5(p[33]),  
+        .col6(p[34])  
+    );  
+    RAM_set u_ram_6 (  
+        .clk(clk),  
+        .rst(rst),  
+        .data(input_data6),  
+        .col0(p[35]),  
+        .col1(p[36]),  
+        .col2(p[37]),  
+        .col3(p[38]),  
+        .col4(p[39]),  
+        .col5(p[40]),  
+        .col6(p[41])  
+    ); 
+    RAM_set u_ram_7 (  
+        .clk(clk),  
+        .rst(rst),  
+        .data(input_data7),  
+        .col0(p[42]),  
+        .col1(p[43]),  
+        .col2(p[44]),  
+        .col3(p[45]),  
+        .col4(p[46]),  
+        .col5(p[47]),  
+        .col6(p[48])  
+    );
+    RAM_set u_ram_8 (  
+        .clk(clk),  
+        .rst(rst),  
+        .data(input_data8),  
+        .col0(p[49]),  
+        .col1(p[50]),  
+        .col2(p[51]),  
+        .col3(p[52]),  
+        .col4(p[53]),  
+        .col5(p[54]),  
+        .col6(p[55])  
+    ); 
+
+    // 锟叫硷拷锟斤拷锟斤拷锟斤拷同锟斤拷  
     assign hs = (hcount < hsw) ? 0 : 1;             
     always @ (posedge clk or posedge rst)
     begin  
@@ -173,14 +170,15 @@ module vga_char_display(
         else  
             hcount <= hcount+1;  
     end  
-      
-    // 行计数与场同步  
+
+    // 锟叫硷拷锟斤拷锟诫场同锟斤拷  
     assign vs = (vcount < vsw) ? 0 : 1;             
     always @ (posedge clk or posedge rst)          
     begin  
         if (rst)  
             vcount <= 0;  
-        else if (hcount == hframe-1) begin       
+        else if (hcount == hframe-1) 
+        begin       
             if (vcount == vframe-1)  
                 vcount <= 0;  
             else  
@@ -189,42 +187,46 @@ module vga_char_display(
         else  
             vcount <= vcount;  
     end  
-      
-    // 设置显示信号值  
+
+    // 锟斤拷锟斤拷锟斤拷示锟脚猴拷值  
     always @ (posedge clk or posedge rst)  
     begin  
-        if (rst) begin  
-            r <= 0;  
-            g <= 0;  
-            b <= 0;  
-        end  
-        else if (vcount>=top && vcount<=bottom  
-                && hcount>=left && hcount<=right) begin  
-            if (vcount>=show_v && vcount<=show_v + show_height  
-                    && hcount>=show_h && hcount<=show_h+show_width) begin  
-                if (p[hcount-left][vcount-top]) begin  
-                    r <= 4'b1111;  
-                    g <= 4'b1111;  
-                    b <= 4'b1111;  
-                end  
-                else begin  
-                    r <= 4'b0000;  
-                    g <= 4'b0000;  
-                    b <= 4'b0000;  
-                end  
+        if (rst) 
+            begin  
+                r <= 0;  
+                g <= 0;  
+                b <= 0;  
             end  
-            else begin  
-                r <= 4'b0000;  
-                g <= 4'b0000;  
-                b <= 4'b0000;  
-            end  
+        else if (vcount >= top && vcount <= bottom && hcount >= left && hcount <= right) 
+            begin  
+                if (vcount >= show_v && vcount <= show_v + show_height && hcount >= show_h && hcount <= show_h + show_width) 
+                    begin  
+                        if (p[hcount - left][vcount - top]) 
+                            begin  
+                                r <= 4'b1111;  
+                                g <= 4'b1111;  
+                                b <= 4'b1111;  
+                            end  
+                        else 
+                            begin  
+                                r <= 4'b0000;  
+                                g <= 4'b0000;  
+                                b <= 4'b0000;  
+                            end  
+                    end  
+                else 
+                    begin  
+                        r <= 4'b0000;  
+                        g <= 4'b0000;  
+                        b <= 4'b0000;  
+                    end  
         end  
-        else begin  
+    else 
+        begin  
             r <= 4'b0000;  
             g <= 4'b0000;  
             b <= 4'b0000;  
         end  
     end  
-  
 endmodule  
 
