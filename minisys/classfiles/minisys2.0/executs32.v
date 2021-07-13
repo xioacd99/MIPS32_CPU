@@ -48,13 +48,13 @@ module Executs32(
     reg          s;
     
     assign Sftm = Function_opcode[2:0];                              // 实际有用的只有低三位(移位指令）
-    assign Exe_code = (I_format==0) ? Function_opcode : {3'b000,Exe_opcode[2:0]};
+    assign Exe_code = (I_format == 0) ? Function_opcode : {3'b000,Exe_opcode[2:0]};
     assign Ainput = Read_data_1;
     assign Binput = (ALUSrc == 0) ? Read_data_2 : Sign_extend[31:0]; // R/LW,SW  sft  else的时候含LW和SW
     assign ALU_ctl[0] = (Exe_code[0] | Exe_code[3]) & ALUOp[1];      //24H AND 
     assign ALU_ctl[1] = ((!Exe_code[2]) | (!ALUOp[1]));
     assign ALU_ctl[2] = (Exe_code[1] & ALUOp[1]) | ALUOp[0];
-    assign Zero = (ALU_output_mux[31:0]== 32'h00000000) ? 1'b1 : 1'b0;
+    assign Zero = (ALU_output_mux[31:0] == 32'h00000000) ? 1'b1 : 1'b0;
 
     always @* begin                                                 // 6种移位指令
         if(Sftmd)
@@ -72,13 +72,13 @@ module Executs32(
 
     always @* begin
         // slti(sub)  处理所有SLT类的问题
-        if(((ALU_ctl==3'b111) && (Exe_code[3]==1))||((ALU_ctl[2:1]==2'b11) && (I_format==1))) 
+        if(((ALU_ctl == 3'b111) && (Exe_code[3] == 1))||((ALU_ctl[2:1] == 2'b11) && (I_format == 1))) 
             // D31=1 IS neg (LESS)
-            ALU_Result = {30'b000000000000000000000000000000,ALU_output_mux[31]};
-        else if((ALU_ctl==3'b101) && (I_format==1)) 
+            ALU_Result = {30'b000000000000000000000000000000, ALU_output_mux[31]};
+        else if((ALU_ctl == 3'b101) && (I_format == 1)) 
             // lui data
-            ALU_Result[31:0] = {Binput[15:0],16'b0000000000000000}; 
-        else if(Sftmd==1) 
+            ALU_Result[31:0] = {Binput[15:0], 16'b0000000000000000}; 
+        else if(Sftmd == 1) 
             ALU_Result = Sinput; 
         else  
             ALU_Result = ALU_output_mux[31:0]; 

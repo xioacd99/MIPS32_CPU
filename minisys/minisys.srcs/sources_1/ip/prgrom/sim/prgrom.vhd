@@ -59,9 +59,7 @@ USE blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1;
 ENTITY prgrom IS
   PORT (
     clka : IN STD_LOGIC;
-    wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     addra : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
-    dina : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     douta : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END prgrom;
@@ -214,9 +212,7 @@ ARCHITECTURE prgrom_arch OF prgrom IS
   END COMPONENT blk_mem_gen_v8_3_1;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF clka: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK";
-  ATTRIBUTE X_INTERFACE_INFO OF wea: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA WE";
   ATTRIBUTE X_INTERFACE_INFO OF addra: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR";
-  ATTRIBUTE X_INTERFACE_INFO OF dina: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA DIN";
   ATTRIBUTE X_INTERFACE_INFO OF douta: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT";
 BEGIN
   U0 : blk_mem_gen_v8_3_1
@@ -232,14 +228,14 @@ BEGIN
       C_CTRL_ECC_ALGO => "NONE",
       C_HAS_AXI_ID => 0,
       C_AXI_ID_WIDTH => 4,
-      C_MEM_TYPE => 0,
+      C_MEM_TYPE => 3,
       C_BYTE_SIZE => 9,
       C_ALGORITHM => 1,
       C_PRIM_TYPE => 1,
       C_LOAD_INIT_FILE => 1,
       C_INIT_FILE_NAME => "prgrom.mif",
       C_INIT_FILE => "prgrom.mem",
-      C_USE_DEFAULT_DATA => 1,
+      C_USE_DEFAULT_DATA => 0,
       C_DEFAULT_DATA => "0",
       C_HAS_RSTA => 0,
       C_RST_PRIORITY_A => "CE",
@@ -269,7 +265,7 @@ BEGIN
       C_WRITE_DEPTH_B => 16384,
       C_READ_DEPTH_B => 16384,
       C_ADDRB_WIDTH => 14,
-      C_HAS_MEM_OUTPUT_REGS_A => 0,
+      C_HAS_MEM_OUTPUT_REGS_A => 1,
       C_HAS_MEM_OUTPUT_REGS_B => 0,
       C_HAS_MUX_OUTPUT_REGS_A => 0,
       C_HAS_MUX_OUTPUT_REGS_B => 0,
@@ -293,16 +289,16 @@ BEGIN
       C_DISABLE_WARN_BHV_RANGE => 0,
       C_COUNT_36K_BRAM => "14",
       C_COUNT_18K_BRAM => "1",
-      C_EST_POWER_SUMMARY => "Estimated Power for IP     :     13.776802 mW"
+      C_EST_POWER_SUMMARY => "Estimated Power for IP     :     12.7204 mW"
     )
     PORT MAP (
       clka => clka,
       rsta => '0',
       ena => '0',
       regcea => '0',
-      wea => wea,
+      wea => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
       addra => addra,
-      dina => dina,
+      dina => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
       douta => douta,
       clkb => '0',
       rstb => '0',

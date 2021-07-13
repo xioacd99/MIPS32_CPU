@@ -41,6 +41,17 @@ module minisys(
     wire         ledctrl, switchctrl;
     wire[15:0]   ioread_data_switch;
     
+    vga_char_display vga(
+        .clk(clk),  
+        .rst(rst),  
+        .CPU_outcome(32'h00000000),
+        .r(r),  
+        .g(g),  
+        .b(b),  
+        .hs(hs),  
+        .vs(vs)  
+    );
+    
     cpuclk cpuclk(
         .clk_in1(clk),                  // 100MHz
         .clk_out1(clock)                // cpuclock
@@ -70,7 +81,7 @@ module minisys(
         .ALU_result(alu_result),
         .Jal(jal),
         .RegWrite(regwrite),
-        .MemorIOtoReg(MemorIOtoReg),
+        .MemorIOtoReg(memoriotoreg),
         .RegDst(regdst),
         .Sign_extend(sign_extend),
         .clock(clock),

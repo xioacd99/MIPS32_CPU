@@ -1,6 +1,6 @@
 @echo off
 set xv_path=E:\\Xilinx\\Vivado\\2015.4\\bin
-call %xv_path%/xsim minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch minisys_sim.tcl -log simulate.log
+call %xv_path%/xsim minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch minisys_sim.tcl -view F:/.vscode/Github/MIPS32_CPU/minisys/minisys_sim_behav.wcfg -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END

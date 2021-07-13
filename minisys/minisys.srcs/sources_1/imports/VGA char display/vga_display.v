@@ -158,8 +158,7 @@ module vga_char_display(
         .col5(p[54]),  
         .col6(p[55])  
     ); 
-
-    // �м�������ͬ��  
+  
     assign hs = (hcount < hsw) ? 0 : 1;             
     always @ (posedge clk or posedge rst)
     begin  
@@ -170,8 +169,7 @@ module vga_char_display(
         else  
             hcount <= hcount+1;  
     end  
-
-    // �м����볡ͬ��  
+ 
     assign vs = (vcount < vsw) ? 0 : 1;             
     always @ (posedge clk or posedge rst)          
     begin  
@@ -188,7 +186,6 @@ module vga_char_display(
             vcount <= vcount;  
     end  
 
-    // ������ʾ�ź�ֵ  
     always @ (posedge clk or posedge rst)  
     begin  
         if (rst) 

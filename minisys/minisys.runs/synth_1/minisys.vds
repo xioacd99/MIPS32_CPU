@@ -1,0 +1,692 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Jul 13 14:34:35 2021
+# Process ID: 19652
+# Current directory: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1
+# Command line: vivado.exe -log minisys.vds -mode batch -messageDb vivado.pb -notrace -source minisys.tcl
+# Log file: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/minisys.vds
+# Journal file: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source minisys.tcl -notrace
+Command: synth_design -top minisys -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 286.758 ; gain = 114.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'minisys' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:3]
+INFO: [Synth 8-638] synthesizing module 'vga_char_display' [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/vga_display.v:3]
+	Parameter hsw bound to: 96 - type: integer 
+	Parameter hbp bound to: 48 - type: integer 
+	Parameter haw bound to: 640 - type: integer 
+	Parameter hfp bound to: 16 - type: integer 
+	Parameter vsw bound to: 2 - type: integer 
+	Parameter vbp bound to: 33 - type: integer 
+	Parameter vaw bound to: 480 - type: integer 
+	Parameter vfp bound to: 10 - type: integer 
+	Parameter left bound to: 144 - type: integer 
+	Parameter right bound to: 784 - type: integer 
+	Parameter hframe bound to: 800 - type: integer 
+	Parameter top bound to: 35 - type: integer 
+	Parameter bottom bound to: 515 - type: integer 
+	Parameter vframe bound to: 525 - type: integer 
+	Parameter show_h bound to: 144 - type: integer 
+	Parameter show_v bound to: 35 - type: integer 
+	Parameter show_width bound to: 56 - type: integer 
+	Parameter show_height bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'RAM_set' [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/ram_set.v:5]
+INFO: [Synth 8-256] done synthesizing module 'RAM_set' (1#1) [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/ram_set.v:5]
+INFO: [Synth 8-256] done synthesizing module 'vga_char_display' (2#1) [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/vga_display.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'r' does not match port width (4) of module 'vga_char_display' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:48]
+WARNING: [Synth 8-689] width (1) of port connection 'g' does not match port width (4) of module 'vga_char_display' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:49]
+WARNING: [Synth 8-689] width (1) of port connection 'b' does not match port width (4) of module 'vga_char_display' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:50]
+INFO: [Synth 8-638] synthesizing module 'cpuclk' [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/realtime/cpuclk_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'cpuclk' (3#1) [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/realtime/cpuclk_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Ifetc32' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v:3]
+INFO: [Synth 8-638] synthesizing module 'prgrom' [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/realtime/prgrom_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'prgrom' (4#1) [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/realtime/prgrom_stub.v:7]
+WARNING: [Synth 8-350] instance 'instmem' of module 'prgrom' requires 5 connections, but only 3 given [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'next_PC_reg' and it is trimmed from '32' to '30' bits. [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v:51]
+INFO: [Synth 8-256] done synthesizing module 'Ifetc32' (5#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ifetc32.v:3]
+INFO: [Synth 8-638] synthesizing module 'Idecode32' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v:3]
+INFO: [Synth 8-226] default block is never used [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v:88]
+INFO: [Synth 8-256] done synthesizing module 'Idecode32' (6#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/idecode32.v:3]
+INFO: [Synth 8-638] synthesizing module 'control32' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v:3]
+INFO: [Synth 8-256] done synthesizing module 'control32' (7#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/control32.v:3]
+INFO: [Synth 8-638] synthesizing module 'Executs32' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v:3]
+INFO: [Synth 8-226] default block is never used [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v:91]
+INFO: [Synth 8-256] done synthesizing module 'Executs32' (8#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v:3]
+INFO: [Synth 8-638] synthesizing module 'dmemory32' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v:3]
+INFO: [Synth 8-638] synthesizing module 'ram' [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/realtime/ram_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'ram' (9#1) [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/realtime/ram_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'dmemory32' (10#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/dmemory32.v:3]
+INFO: [Synth 8-638] synthesizing module 'memorio' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v:3]
+INFO: [Synth 8-256] done synthesizing module 'memorio' (11#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/memorio.v:3]
+INFO: [Synth 8-638] synthesizing module 'ioread' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ioread' (12#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v:3]
+INFO: [Synth 8-638] synthesizing module 'leds' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v:3]
+INFO: [Synth 8-256] done synthesizing module 'leds' (13#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v:3]
+WARNING: [Synth 8-689] width (16) of port connection 'ledout' does not match port width (24) of module 'leds' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:171]
+INFO: [Synth 8-638] synthesizing module 'switchs' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v:3]
+INFO: [Synth 8-256] done synthesizing module 'switchs' (14#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v:3]
+WARNING: [Synth 8-689] width (16) of port connection 'switchrdata' does not match port width (24) of module 'switchs' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:180]
+WARNING: [Synth 8-689] width (16) of port connection 'switch_i' does not match port width (24) of module 'switchs' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:181]
+WARNING: [Synth 8-3848] Net MemorIOtoReg in module/entity minisys does not have driver. [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:84]
+INFO: [Synth 8-256] done synthesizing module 'minisys' (15#1) [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 322.875 ; gain = 150.926
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin idecode:MemorIOtoReg to constant 0 [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:76]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 322.875 ; gain = 150.926
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/dcp/cpuclk_in_context.xdc] for cell 'cpuclk'
+Finished Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/dcp/cpuclk_in_context.xdc] for cell 'cpuclk'
+Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/dcp_2/prgrom_in_context.xdc] for cell 'ifetch/instmem'
+Finished Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/dcp_2/prgrom_in_context.xdc] for cell 'ifetch/instmem'
+Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/dcp_3/ram_in_context.xdc] for cell 'memory/ram'
+Finished Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/dcp_3/ram_in_context.xdc] for cell 'memory/ram'
+Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'led2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[23]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[22]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[21]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[20]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[19]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[18]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[17]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'switch2N4[16]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'r[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'r[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'r[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'r[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'g[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'g[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'g[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'g[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'b[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'b[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'b[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'b[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'hs'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'vs'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'r[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'r[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'r[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'r[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'g[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'g[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'g[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'g[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'b[3]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'b[2]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'b[1]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'b[0]'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'hs'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'vs'. [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc:136]
+Finished Parsing XDC File [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/minisys_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minisys_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minisys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 633.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 633.004 ; gain = 461.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 633.004 ; gain = 461.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  F:/.vscode/Github/MIPS32_CPU/minisys/minisys.runs/synth_1/.Xil/Vivado-19652-/dcp/cpuclk_in_context.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 633.004 ; gain = 461.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'col6_reg[7:0]' into 'col0_reg[7:0]' [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/ram_set.v:28]
+INFO: [Synth 8-4471] merging register 'g_reg[3:0]' into 'r_reg[3:0]' [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/vga_display.v:194]
+INFO: [Synth 8-4471] merging register 'b_reg[3:0]' into 'r_reg[3:0]' [F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/imports/VGA char display/vga_display.v:195]
+INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_format" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "I_format" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Lw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Sw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nBranch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/executs32.v:91]
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'ioread_data_reg' [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/ioread.v:20]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 633.004 ; gain = 461.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 48    
+	                4 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   3 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 2     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	  16 Input      8 Bit        Muxes := 40    
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	  32 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RAM_set 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 6     
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 5     
+Module vga_char_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Ifetc32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     30 Bit        Muxes := 2     
+Module Idecode32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      1 Bit        Muxes := 32    
+Module control32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module Executs32 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module memorio 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module leds 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+Module switchs 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 633.004 ; gain = 461.055
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 633.004 ; gain = 461.055
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 633.004 ; gain = 461.055
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\ifetch/opcplus4_reg[31] ' (FDRE_1) to '\ifetch/opcplus4_reg[30] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ifetch/opcplus4_reg[30] )
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][31] ' (FDRE) to 'idecode/\register_reg[0][30] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][30] ' (FDRE) to 'idecode/\register_reg[0][29] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][29] ' (FDRE) to 'idecode/\register_reg[0][28] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][28] ' (FDRE) to 'idecode/\register_reg[0][27] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][27] ' (FDRE) to 'idecode/\register_reg[0][26] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][26] ' (FDRE) to 'idecode/\register_reg[0][25] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][25] ' (FDRE) to 'idecode/\register_reg[0][24] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][24] ' (FDRE) to 'idecode/\register_reg[0][23] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][23] ' (FDRE) to 'idecode/\register_reg[0][22] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][22] ' (FDRE) to 'idecode/\register_reg[0][21] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][21] ' (FDRE) to 'idecode/\register_reg[0][20] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][20] ' (FDRE) to 'idecode/\register_reg[0][19] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][19] ' (FDRE) to 'idecode/\register_reg[0][18] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][18] ' (FDRE) to 'idecode/\register_reg[0][17] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][17] ' (FDRE) to 'idecode/\register_reg[0][16] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][16] ' (FDRE) to 'idecode/\register_reg[0][15] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][15] ' (FDRE) to 'idecode/\register_reg[0][14] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][14] ' (FDRE) to 'idecode/\register_reg[0][13] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][13] ' (FDRE) to 'idecode/\register_reg[0][12] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][12] ' (FDRE) to 'idecode/\register_reg[0][11] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][11] ' (FDRE) to 'idecode/\register_reg[0][10] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][10] ' (FDRE) to 'idecode/\register_reg[0][9] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][9] ' (FDRE) to 'idecode/\register_reg[0][8] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][8] ' (FDRE) to 'idecode/\register_reg[0][7] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][7] ' (FDRE) to 'idecode/\register_reg[0][6] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][6] ' (FDRE) to 'idecode/\register_reg[0][5] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][5] ' (FDRE) to 'idecode/\register_reg[0][4] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][4] ' (FDRE) to 'idecode/\register_reg[0][3] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][3] ' (FDRE) to 'idecode/\register_reg[0][2] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][2] ' (FDRE) to 'idecode/\register_reg[0][1] '
+INFO: [Synth 8-3886] merging instance 'idecode/\register_reg[0][0] ' (FDRE) to 'idecode/\register_reg[0][1] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (idecode/\register_reg[0][1] )
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col0_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col0_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col0_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col0_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col0_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col0_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col0_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col0_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col1_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col1_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col1_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col1_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col1_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col1_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col1_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col1_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col2_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col2_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col2_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col2_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col2_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col2_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col2_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col2_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col3_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col3_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col3_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col3_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col3_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col3_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col3_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col3_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col4_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col4_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col4_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col4_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col4_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col4_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col4_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col4_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col5_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col5_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col5_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col5_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col5_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col5_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col5_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_1/col5_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col0_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col0_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col0_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col0_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col0_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col0_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col0_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col0_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col1_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col1_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col1_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col1_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col1_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col1_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col1_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col1_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col2_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col2_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col2_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col2_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col2_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col2_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col2_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col2_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col3_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col3_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col3_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col3_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col3_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col3_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col3_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col3_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col4_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col4_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col4_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col4_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col4_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col4_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col4_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col4_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col5_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col5_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col5_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col5_reg[4] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col5_reg[3] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col5_reg[2] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col5_reg[1] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_2/col5_reg[0] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_3/col0_reg[7] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_3/col0_reg[6] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_3/col0_reg[5] ) is unused and will be removed from module vga_char_display.
+WARNING: [Synth 8-3332] Sequential element (\u_ram_3/col0_reg[4] ) is unused and will be removed from module vga_char_display.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 633.004 ; gain = 461.055
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 633.004 ; gain = 461.055
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'cpuclk/clk_out1' to pin 'cpuclk/bbstub_clk_out1/O'
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 633.004 ; gain = 461.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:17 . Memory (MB): peak = 704.906 ; gain = 532.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 725.352 ; gain = 553.402
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 725.352 ; gain = 553.402
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 725.352 ; gain = 553.402
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ifetch/instmem  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 725.352 ; gain = 553.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 725.352 ; gain = 553.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 725.352 ; gain = 553.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 725.352 ; gain = 553.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 725.352 ; gain = 553.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 725.352 ; gain = 553.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cpuclk        |         1|
+|2     |prgrom        |         1|
+|3     |ram           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |cpuclk |     1|
+|2     |prgrom |     1|
+|3     |ram    |     1|
+|4     |CARRY4 |    24|
+|5     |LUT1   |    34|
+|6     |LUT2   |   117|
+|7     |LUT3   |   228|
+|8     |LUT4   |   118|
+|9     |LUT5   |   325|
+|10    |LUT6   |  1057|
+|11    |MUXF7  |   267|
+|12    |MUXF8  |    67|
+|13    |FDCE   |    16|
+|14    |FDRE   |   972|
+|15    |FDSE   |    80|
+|16    |IBUF   |     1|
+|17    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+----------+------+
+|      |Instance  |Module    |Cells |
++------+----------+----------+------+
+|1     |top       |          |  3387|
+|2     |  idecode |Idecode32 |  2166|
+|3     |  ifetch  |Ifetc32   |  1154|
+|4     |  led16   |leds      |    16|
+|5     |  memory  |dmemory32 |    33|
++------+----------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 725.352 ; gain = 553.402
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 33 critical warnings and 525 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:14 . Memory (MB): peak = 725.352 ; gain = 198.121
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 725.352 ; gain = 553.402
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 60 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 172 Warnings, 33 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 725.352 ; gain = 513.641
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 725.352 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 13 14:36:01 2021...

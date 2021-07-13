@@ -26,7 +26,7 @@ initial begin
     #1 
     begin 
         rst = 0;
-        CPU_outcome = 32'hFFFF_FFFF;
+        CPU_outcome = 32'h00000002;
         clk = 0;
     end;
     #1 

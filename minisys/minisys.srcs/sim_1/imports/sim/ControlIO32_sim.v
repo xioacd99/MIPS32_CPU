@@ -4,7 +4,8 @@ module ControlIO32_sim();
     // input
     reg[5:0]   Opcode = 6'b000000;                          // 来自取指单元instruction[31..26]
     reg[5:0]   Function_opcode  = 6'b100000;                // r-form instructions[5..0]  ADD
-    reg[21:0]  Alu_resultHigh = 22'b11000000110100100011;   // 读操作需要从端口或存储器读数据到寄存器LW和SW的真正地址是Alu_Result,这里的Alu_resultHigh来自执行单元Alu_Result[31..10]，这个信号要进入到control32.v的模块中
+    reg[21:0]  Alu_resultHigh = 22'b11000000110100100011;   // 读操作需要从端口或存储器读数据到寄存器LW和SW的真正地址
+                                                            // 是Alu_Result,这里的Alu_resultHigh来自执行单元Alu_Result[31..10]，这个信号要进入到control32.v的模块中
     // output
     wire       Jrn;
     wire       RegDST;
@@ -68,6 +69,6 @@ module ControlIO32_sim();
             begin 
                 Opcode = 6'b000000; 
                 Function_opcode  = 6'b000010; 
-            end;
+            end
     end         
 endmodule

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1626095619">
-  <File Type="RDS-DCP" Name="control32.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1626170055">
+  <File Type="RDS-DCP" Name="minisys.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
-  <File Type="RDS-UTIL-PB" Name="control32_utilization_synth.pb"/>
+  <File Type="RDS-UTIL-PB" Name="minisys_utilization_synth.pb"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
-  <File Type="RDS-PROPCONSTRS" Name="control32_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="control32.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="minisys_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="minisys.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
-  <File Type="RDS-RDS" Name="control32.vds"/>
-  <File Type="RDS-UTIL" Name="control32_utilization_synth.rpt"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="control32_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="control32_timing_summary_synth.pb"/>
+  <File Type="RDS-RDS" Name="minisys.vds"/>
+  <File Type="RDS-UTIL" Name="minisys_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="minisys_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="minisys_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/classfiles/minisys2.0/control32.v">
+    <File Path="$PSRCDIR/sources_1/imports/VGA char display/ram_set.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/VGA char display/ram_set.v"/>
+        <Attr Name="ImportTime" Val="1626003546"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -22,7 +24,6 @@
     </File>
     <File Path="$PPRDIR/classfiles/minisys2.0/switchs.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -30,7 +31,6 @@
     </File>
     <File Path="$PPRDIR/classfiles/minisys2.0/memorio.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -38,7 +38,6 @@
     </File>
     <File Path="$PPRDIR/classfiles/minisys2.0/leds.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -46,7 +45,6 @@
     </File>
     <File Path="$PPRDIR/classfiles/minisys2.0/ioread.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -54,7 +52,6 @@
     </File>
     <File Path="$PPRDIR/classfiles/minisys2.0/ifetc32.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -62,7 +59,6 @@
     </File>
     <File Path="$PPRDIR/classfiles/minisys2.0/idecode32.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -70,7 +66,6 @@
     </File>
     <File Path="$PPRDIR/classfiles/minisys2.0/executs32.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -78,7 +73,22 @@
     </File>
     <File Path="$PPRDIR/classfiles/minisys2.0/dmemory32.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/classfiles/minisys2.0/control32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VGA char display/vga_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/VGA char display/vga_display.v"/>
+        <Attr Name="ImportTime" Val="1626004091"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -86,7 +96,6 @@
     </File>
     <File Path="$PPRDIR/classfiles/minisys2.0/minisys.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -104,29 +113,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/VGA char display/vga_display.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/VGA char display/vga_display.v"/>
-        <Attr Name="ImportTime" Val="1626004091"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/VGA char display/ram_set.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/VGA char display/ram_set.v"/>
-        <Attr Name="ImportTime" Val="1626003546"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="control32"/>
+      <Option Name="TopModule" Val="minisys"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -147,4 +136,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cpuclk"/>
+  <BlockFileSet Type="BlockSrcs" Name="prgrom"/>
+  <BlockFileSet Type="BlockSrcs" Name="ram"/>
 </GenRun>

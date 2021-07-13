@@ -22,9 +22,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 327.496 ; gain = 155.980
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 327.633 ; gain = 156.070
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'prgrom' [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/synth/prgrom.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'prgrom' [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/synth/prgrom.vhd:67]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -36,14 +36,14 @@ INFO: [Synth 8-638] synthesizing module 'prgrom' [f:/.vscode/Github/MIPS32_CPU/m
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
 	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_ALGORITHM bound to: 1 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
 	Parameter C_INIT_FILE bound to: prgrom.mem - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
@@ -73,7 +73,7 @@ INFO: [Synth 8-638] synthesizing module 'prgrom' [f:/.vscode/Github/MIPS32_CPU/m
 	Parameter C_WRITE_DEPTH_B bound to: 16384 - type: integer 
 	Parameter C_READ_DEPTH_B bound to: 16384 - type: integer 
 	Parameter C_ADDRB_WIDTH bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -97,8 +97,8 @@ INFO: [Synth 8-638] synthesizing module 'prgrom' [f:/.vscode/Github/MIPS32_CPU/m
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_COUNT_36K_BRAM bound to: 14 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     13.776802 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_1' declared at 'f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'U0' of component 'blk_mem_gen_v8_3_1' [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/synth/prgrom.vhd:228]
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     12.7204 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_1' declared at 'f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'U0' of component 'blk_mem_gen_v8_3_1' [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/synth/prgrom.vhd:224]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1' [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:277]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
@@ -111,14 +111,14 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1' [f:/.vscode/Github/
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
 	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_ALGORITHM bound to: 1 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
 	Parameter C_INIT_FILE bound to: prgrom.mem - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
@@ -148,7 +148,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1' [f:/.vscode/Github/
 	Parameter C_WRITE_DEPTH_B bound to: 16384 - type: integer 
 	Parameter C_READ_DEPTH_B bound to: 16384 - type: integer 
 	Parameter C_ADDRB_WIDTH bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -172,7 +172,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1' [f:/.vscode/Github/
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_COUNT_36K_BRAM bound to: 14 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     13.776802 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     12.7204 mW - type: string 
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_synth' [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
@@ -184,7 +184,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_synth' [f:/.vscode/G
 	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_ALGORITHM bound to: 1 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
@@ -192,7 +192,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_synth' [f:/.vscode/G
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
 	Parameter C_INIT_FILE bound to: prgrom.mem - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -223,7 +223,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_synth' [f:/.vscode/G
 	Parameter C_WRITE_DEPTH_B bound to: 16384 - type: integer 
 	Parameter C_READ_DEPTH_B bound to: 16384 - type: integer 
 	Parameter C_ADDRB_WIDTH bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -249,7 +249,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [f:/.vscode/Github/MIP
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_ALGORITHM bound to: 1 - type: integer 
 	Parameter C_ALGORITHM_i bound to: 1 - type: integer 
@@ -257,7 +257,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [f:/.vscode/Github/MIP
 	Parameter C_PRIM_TYPE_i bound to: 1 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -293,7 +293,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [f:/.vscode/Github/MIP
 	Parameter C_WRITE_DEPTH_B bound to: 16384 - type: integer 
 	Parameter C_READ_DEPTH_B bound to: 16384 - type: integer 
 	Parameter C_ADDRB_WIDTH bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -400,9 +400,9 @@ WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [
 WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
-	Parameter C_RSTA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RSTA_WIDTH bound to: 2 - type: integer 
 	Parameter C_HAS_ENA bound to: 0 - type: integer 
 	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
 	Parameter C_REGCEA_WIDTH bound to: 1 - type: integer 
@@ -425,7 +425,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [f:/.vscode/Github
 	Parameter C_WRITE_WIDTH_B_CORE bound to: 32 - type: integer 
 	Parameter C_ADDRB_WIDTH bound to: 14 - type: integer 
 	Parameter C_ADDRB_WIDTH_CORE bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -449,7 +449,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [f:/.vscode/G
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_PRIM_TYPE_i bound to: 1 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
@@ -463,11 +463,11 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [f:/.vscode/G
 	Parameter C_USED_WIDTH bound to: 320000'b0000000000000000000000000000000100000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000100100000000000000000000000000001001000000000000000000000000000010010000000000000000000000000000100100000000000000000000000000001001000000000000000000000000000010010000000000000000000000000000100100000000000000000000000000001001000000000000000000000000000010010000000000000000000000000000100100000000000000000000000000001001000000000000000000000000000010010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
-	Parameter C_RSTA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RSTA_WIDTH bound to: 2 - type: integer 
 	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
 	Parameter C_RSTRAM_A bound to: 0 - type: integer 
 	Parameter C_INITA_VAL bound to: 0 - type: string 
@@ -498,7 +498,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [f:/.vscode/G
 	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -527,7 +527,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [f:/.vscode/Git
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -538,7 +538,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [f:/.vscode/Git
 	Parameter C_USED_WIDTH bound to: 1 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -561,7 +561,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [f:/.vscode/Git
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -583,7 +583,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [f:/.vsc
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -594,7 +594,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [f:/.vsc
 	Parameter C_USED_WIDTH bound to: 1 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -619,7 +619,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [f:/.vsc
 	Parameter C_READ_WIDTH_B bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -635,7 +635,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [f:/.vsc
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 INFO: [Synth 8-3919] null assignment ignored [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:101753]
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -745,7 +745,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -756,7 +756,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0'
 	Parameter C_USED_WIDTH bound to: 2 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -779,7 +779,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -801,7 +801,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -812,7 +812,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 2 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -837,7 +837,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 2 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -852,7 +852,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -1038,7 +1038,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized1'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -1049,7 +1049,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized1'
 	Parameter C_USED_WIDTH bound to: 2 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -1072,7 +1072,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized1'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1094,7 +1094,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -1105,7 +1105,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 2 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -1130,7 +1130,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 2 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 14 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1145,7 +1145,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -1331,7 +1331,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized2'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -1342,7 +1342,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized2'
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -1365,7 +1365,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized2'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1387,7 +1387,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -1398,7 +1398,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -1423,7 +1423,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1438,7 +1438,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -1624,7 +1624,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized3'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -1635,7 +1635,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized3'
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -1658,7 +1658,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized3'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1680,7 +1680,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -1691,7 +1691,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -1716,7 +1716,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1731,7 +1731,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -1917,7 +1917,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized4'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -1928,7 +1928,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized4'
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -1951,7 +1951,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized4'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1973,7 +1973,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -1984,7 +1984,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -2009,7 +2009,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -2024,7 +2024,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -2210,7 +2210,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized5'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -2221,7 +2221,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized5'
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -2244,7 +2244,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized5'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -2266,7 +2266,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -2277,7 +2277,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -2302,7 +2302,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -2317,7 +2317,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -2503,7 +2503,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized6'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -2514,7 +2514,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized6'
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -2537,7 +2537,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized6'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -2559,7 +2559,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -2570,7 +2570,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -2595,7 +2595,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -2610,7 +2610,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -2796,7 +2796,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized7'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -2807,7 +2807,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized7'
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -2830,7 +2830,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized7'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -2852,7 +2852,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -2863,7 +2863,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -2888,7 +2888,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -2903,7 +2903,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -3089,7 +3089,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized8'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -3100,7 +3100,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized8'
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -3123,7 +3123,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized8'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -3145,7 +3145,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -3156,7 +3156,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -3181,7 +3181,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -3196,7 +3196,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -3382,7 +3382,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized9'
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -3393,7 +3393,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized9'
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -3416,7 +3416,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized9'
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -3438,7 +3438,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -3449,7 +3449,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -3474,7 +3474,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -3489,7 +3489,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -3675,7 +3675,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized10
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -3686,7 +3686,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized10
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -3709,7 +3709,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized10
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -3731,7 +3731,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -3742,7 +3742,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -3767,7 +3767,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -3782,7 +3782,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -3968,7 +3968,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized11
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -3979,7 +3979,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized11
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -4002,7 +4002,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized11
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -4024,7 +4024,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -4035,7 +4035,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -4060,7 +4060,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -4075,7 +4075,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -4261,7 +4261,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized12
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -4272,7 +4272,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized12
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -4295,7 +4295,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized12
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -4317,7 +4317,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -4328,7 +4328,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -4353,7 +4353,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -4368,7 +4368,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -4554,7 +4554,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized13
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -4565,7 +4565,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized13
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_RST_TYPE bound to: sync - type: string 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -4588,7 +4588,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized13
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -4610,7 +4610,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
 	Parameter C_USER_DEPTH bound to: 16384 - type: integer 
@@ -4621,7 +4621,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_USED_WIDTH bound to: 9 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: prgrom.mif - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_USE_BYTE_WE bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
@@ -4646,7 +4646,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_READ_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -4661,7 +4661,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 14 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 14 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
 	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
@@ -4854,7 +4854,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_mux' [f:/.vscode/Github/MIP
 	Parameter C_MUX_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_INPUT_MUX_DEPTH bound to: 4 - type: integer 
 	Parameter C_SELECT_WIDTH bound to: 2 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS bound to: 1 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS bound to: 0 - type: integer 
 	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
@@ -4889,7 +4889,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_mux__parameterized0' [f:/.v
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_mux__parameterized0' (5#1) [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:5391]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (6#1) [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
@@ -4903,9 +4903,9 @@ INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (7#1) [f:/.v
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (8#1) [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_synth' (9#1) [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1' (10#1) [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:277]
-INFO: [Synth 8-256] done synthesizing module 'prgrom' (11#1) [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/synth/prgrom.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'prgrom' (11#1) [f:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/sources_1/ip/prgrom/synth/prgrom.vhd:67]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 499.844 ; gain = 328.328
+Finished RTL Elaboration : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 500.051 ; gain = 328.488
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -4915,7 +4915,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 499.844 ; gain = 328.328
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 500.051 ; gain = 328.488
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -4931,25 +4931,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 653.605 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 653.793 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Constraint Validation : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -4962,10 +4962,11 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
-	                2 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
 +---Muxes : 
 	   4 Input     32 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -4980,9 +4981,11 @@ Detailed RTL Component Info :
 Module blk_mem_gen_mux 
 Detailed RTL Component Info : 
 +---Registers : 
-	                2 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
 +---Muxes : 
 	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module blk_mem_gen_mux__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -5001,14 +5004,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 653.605 ; gain = 482.090
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Parallel Reinference  : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 653.793 ; gain = 482.230
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -5019,9 +5022,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Area Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 653.793 ; gain = 482.230
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -5035,10 +5038,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -5050,16 +5053,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -5076,7 +5079,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -5089,7 +5092,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -5101,25 +5104,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -5135,7 +5138,7 @@ Report Cell Usage:
 +------+-----------+------+
 |      |Cell       |Count |
 +------+-----------+------+
-|1     |LUT2       |     5|
+|1     |LUT2       |     4|
 |2     |LUT6       |    27|
 |3     |RAMB18E1   |     1|
 |4     |RAMB36E1   |     1|
@@ -5144,19 +5147,19 @@ Report Cell Usage:
 |7     |RAMB36E1_3 |     9|
 |8     |RAMB36E1_4 |     1|
 |9     |RAMB36E1_5 |     1|
-|10    |FDRE       |     2|
+|10    |FDRE       |     4|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+--------------------------------------+-----------------------------------------------+------+
 |      |Instance                              |Module                                         |Cells |
 +------+--------------------------------------+-----------------------------------------------+------+
-|1     |top                                   |                                               |    49|
-|2     |  U0                                  |blk_mem_gen_v8_3_1                             |    49|
-|3     |    inst_blk_mem_gen                  |blk_mem_gen_v8_3_1_synth                       |    49|
-|4     |      \gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                |    49|
-|5     |        \valid.cstr                   |blk_mem_gen_generic_cstr                       |    49|
-|6     |          \has_mux_a.A                |blk_mem_gen_mux                                |    29|
+|1     |top                                   |                                               |    50|
+|2     |  U0                                  |blk_mem_gen_v8_3_1                             |    50|
+|3     |    inst_blk_mem_gen                  |blk_mem_gen_v8_3_1_synth                       |    50|
+|4     |      \gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                |    50|
+|5     |        \valid.cstr                   |blk_mem_gen_generic_cstr                       |    50|
+|6     |          \has_mux_a.A                |blk_mem_gen_mux                                |    31|
 |7     |          \ramloop[0].ram.r           |blk_mem_gen_prim_width                         |     1|
 |8     |            \prim_init.ram            |blk_mem_gen_prim_wrapper_init                  |     1|
 |9     |          \ramloop[10].ram.r          |blk_mem_gen_prim_width__parameterized9         |     1|
@@ -5189,11 +5192,11 @@ Report Instance Areas:
 |36    |            \prim_init.ram            |blk_mem_gen_prim_wrapper_init__parameterized8  |     1|
 +------+--------------------------------------+-----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 653.605 ; gain = 482.090
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 653.793 ; gain = 482.230
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:01:43 . Memory (MB): peak = 653.605 ; gain = 253.918
-Synthesis Optimization Complete : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 653.605 ; gain = 482.090
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:01:28 . Memory (MB): peak = 653.793 ; gain = 254.082
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 653.793 ; gain = 482.230
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -5207,7 +5210,7 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 143 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:01:49 . Memory (MB): peak = 653.605 ; gain = 407.680
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 653.793 ; gain = 407.824
 INFO: [Coretcl 2-1174] Renamed 35 cell refs.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 653.605 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Jul 11 17:30:17 2021...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 653.793 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 13 17:50:43 2021...

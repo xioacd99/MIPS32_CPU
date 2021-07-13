@@ -43,34 +43,50 @@ module Ifetc32(
     
     assign PC_plus_4[31:2] = PC[31:2] + 1;
     assign PC_plus_4[1:0] = 2'b00;
-    assign PC_plus_4_out = PC_plus_4[31:0];  
+    assign PC_plus_4_out = PC_plus_4;  
 
     // beq $n ,$m if $n = $m branch   bne if $n != $m branch jr
     always @* begin  
-        if (((Branch == 1) && (Zero == 1)) || ((nBranch == 1) && (Zero == 0)))
-            next_PC = Add_result;
-        else if (Jrn == 1)
-            next_PC = Read_data_1[31:0];
+        if (Jrn == 1)
+            begin
+                next_PC[1:0] = 2'b00;
+                next_PC[31:2] = Read_data_1[29:0];
+            end
+        else if ((Branch == 1 && Zero == 1)||(nBranch == 1 && Zero == 0))
+            begin
+                next_PC[1:0] = 2'b00;
+                next_PC[31:2] = Add_result[29:0];
+            end
         else
-            next_PC = {2'b00, PC_plus_4[31:2]};
+            begin
+                next_PC = PC_plus_4;
+            end
     end
     
-    // J¡¢Jal
+    // J¡¢Jal¡¢reset
     always @(negedge clock) 
         begin 
             if (reset == 1) 
                 begin
-                    PC <= 32'b00000000000000000000000000000000;
+                    PC <= 32'h00000000;
                 end 
-            else 
+            else if (Jmp == 1)
                 begin
-                    if ((Jmp == 1) || (Jal == 1)) 
-                        begin
-                            opcplus4 = {2'b00, PC_plus_4[31:2]};
-                            PC[31:0] <= {4'b0000, Instruction[25:0], 2'b00};
-                        end 
-                    else
-                        PC[31:0] <= {next_PC[29:0], 2'b00};
+                    PC[27:2] = Instruction[25:0];
+                    PC[31:28] = 4'b0000;
+                    PC[1:0] = 2'b00;
+                end
+            else if (Jal == 1)
+                begin
+                    opcplus4[29:0] = PC_plus_4[31:2];
+                    opcplus4[31:30] = 2'b00;
+                    PC[27:2] = Instruction[25:0];
+                    PC[31:28] = 4'b0000;
+                    PC[1:0] = 2'b00;
+                end
+            else
+                begin
+                    PC = next_PC;
                 end
         end
 endmodule

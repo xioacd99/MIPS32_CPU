@@ -51,11 +51,11 @@ module control32(
     assign I_format = (Opcode[5:3] == 3'b001)? 1'b1: 1'b0;
     assign Lw = (Opcode == 6'b100011)? 1'b1 : 1'b0;
     assign Jal = (Opcode == 6'b000011)? 1'b1 : 1'b0;
-    assign Jrn = (R_format & Function_opcode == 6'b001000)? 1'b1 : 1'b0;
-    assign RegWrite = (I_format || (R_format & ~Jrn) || Lw || Jal)? 1'b1 : 1'b0;
+    assign Jrn = (Opcode == 6'b000000 && Function_opcode == 6'b001000)? 1'b1 : 1'b0;
+    assign RegWrite = ( Jrn || Sw || Branch || nBranch || Jmp  )? 1'b0:1'b1;
     
     assign Sw = (Opcode == 6'b101011)? 1'b1 : 1'b0;
-    assign ALUSrc = I_format || Lw || Sw;
+    assign ALUSrc = (Opcode[5:3] == 3'b001 || Lw || Sw)? 1'b1:1'b0;
     assign Branch = (Opcode == 6'b000100)? 1'b1 : 1'b0;
     assign nBranch = (Opcode == 6'b000101)? 1'b1 : 1'b0;
     assign Jmp = (Opcode == 6'b000010)? 1'b1 : 1'b0;
@@ -64,10 +64,8 @@ module control32(
     assign MemRead = ((Lw == 1) && (Alu_resultHigh != 22'b1111111111111111111111))? 1'b1 : 1'b0;
     assign IORead = ((Lw == 1) && (Alu_resultHigh == 22'b1111111111111111111111))? 1'b1 : 1'b0;
     assign IOWrite = ((Sw == 1) && (Alu_resultHigh == 22'b1111111111111111111111))? 1'b1 : 1'b0;
-    assign MemorIOtoReg = Lw;
-    assign Sftmd = (R_format & (Function_opcode == 6'b000000 || Function_opcode == 6'b000010 || 
-        Function_opcode == 6'b000100 || Function_opcode == 6'b000110 || Function_opcode == 6'b000011 || 
-        Function_opcode == 6'b000111))? 1'b1 : 1'b0; 
+    assign MemorIOtoReg = (Opcode==6'b100011)? 1'b1:1'b0;
+    assign Sftmd = (Opcode == 6'b000000 && Function_opcode[5:3] == 3'b000 )? 1'b1:1'b0;
     assign ALUOp = {(R_format || I_format), (Branch || nBranch)};
 
 endmodule

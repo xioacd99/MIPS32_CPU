@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log control32.vds -m64 -mode batch -messageDb vivado.pb -notrace -source control32.tcl
+EAStep vivado -log minisys.vds -m64 -mode batch -messageDb vivado.pb -notrace -source minisys.tcl

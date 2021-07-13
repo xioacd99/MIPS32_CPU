@@ -12,7 +12,7 @@ module exe_sim();
     reg        Sftmd = 1'b0;
     reg        ALUSrc = 1'b0;
     reg        I_format = 1'b0;
-    reg         Jrn = 1'b0;
+    reg        Jrn = 1'b0;
     reg[31:0]  PC_plus_4 = 32'h00000004;
     // output
     wire       Zero;
