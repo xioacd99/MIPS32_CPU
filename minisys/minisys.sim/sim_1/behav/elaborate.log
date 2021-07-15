@@ -8,10 +8,11 @@ WARNING: [VRFC 10-278] actual bit length 24 differs from formal bit length 16 fo
 WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port r [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:48]
 WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port g [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:49]
 WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port b [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:50]
-WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port ledout [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:171]
 WARNING: [VRFC 10-142] switchrdata was previously declared with a different range [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/switchs.v:20]
 WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switchrdata [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:180]
 WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 24 for port switch_i [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/minisys.v:181]
+WARNING: [VRFC 10-597] element index 23 into ledout is out of bounds [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v:30]
+WARNING: [VRFC 10-597] element index 23 into ledout is out of bounds [F:/.vscode/Github/MIPS32_CPU/minisys/classfiles/minisys2.0/leds.v:32]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

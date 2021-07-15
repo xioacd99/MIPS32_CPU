@@ -3,15 +3,36 @@
 module vga_char_display(  
     input clk,  
     input rst,  
-    input [31:0] CPU_outcome,
     output reg [3:0] r,  
     output reg [3:0] g,  
     output reg [3:0] b,  
     output hs,  
     output vs  
 );   
+    wire clock;
+    wire show_clk;
+    reg [31:0] CPU_outcome = 32'h12345678;
     
-    reg [9:0] hcount, vcount;  
+    reg [23:0] count = 0;
+    
+    always @(posedge clock or posedge rst)
+    begin  
+            if (rst)  
+                count <= 0;  
+            else count = count + 1;
+     end  
+    
+    always @(posedge count[23])
+    begin
+        CPU_outcome = CPU_outcome + 1;
+    end
+    
+     cpuclk cpuclk(
+           .clk_in1(clk),                  // 100MHz
+           .clk_out1(clock)                // cpuclock
+     );
+    
+    reg [9:0] hcount, vcount;
     wire [7:0] p[55:0];   
     
     reg [3:0] input_data1;
@@ -63,7 +84,7 @@ module vga_char_display(
     end
 
     RAM_set u_ram_1 (  
-        .clk(clk),  
+        .clk(clock),  
         .rst(rst),  
         .data(input_data1),  
         .col0(p[0]),  
@@ -75,7 +96,7 @@ module vga_char_display(
         .col6(p[6])  
     );  
     RAM_set u_ram_2 (  
-        .clk(clk),  
+        .clk(clock),  
         .rst(rst),  
         .data(input_data2),  
         .col0(p[7]),  
@@ -87,7 +108,7 @@ module vga_char_display(
         .col6(p[13])  
     ); 
     RAM_set u_ram_3 (  
-        .clk(clk),  
+        .clk(clock),  
         .rst(rst),  
         .data(input_data3),  
         .col0(p[14]),  
@@ -99,7 +120,7 @@ module vga_char_display(
         .col6(p[20])  
     );
     RAM_set u_ram_4 (  
-        .clk(clk),  
+        .clk(clock),  
         .rst(rst),  
         .data(input_data4),  
         .col0(p[21]),  
@@ -111,7 +132,7 @@ module vga_char_display(
         .col6(p[27])  
     ); 
     RAM_set u_ram_5 (  
-        .clk(clk),  
+        .clk(clock),  
         .rst(rst),  
         .data(input_data5),  
         .col0(p[28]),  
@@ -123,7 +144,7 @@ module vga_char_display(
         .col6(p[34])  
     );  
     RAM_set u_ram_6 (  
-        .clk(clk),  
+        .clk(clock),  
         .rst(rst),  
         .data(input_data6),  
         .col0(p[35]),  
@@ -135,7 +156,7 @@ module vga_char_display(
         .col6(p[41])  
     ); 
     RAM_set u_ram_7 (  
-        .clk(clk),  
+        .clk(clock),  
         .rst(rst),  
         .data(input_data7),  
         .col0(p[42]),  
@@ -147,7 +168,7 @@ module vga_char_display(
         .col6(p[48])  
     );
     RAM_set u_ram_8 (  
-        .clk(clk),  
+        .clk(clock),  
         .rst(rst),  
         .data(input_data8),  
         .col0(p[49]),  
@@ -167,7 +188,7 @@ module vga_char_display(
         else if (hcount == hframe-1)  
             hcount <= 0;  
         else  
-            hcount <= hcount+1;  
+            hcount <= hcount + 1;  
     end  
  
     assign vs = (vcount < vsw) ? 0 : 1;             
@@ -175,12 +196,12 @@ module vga_char_display(
     begin  
         if (rst)  
             vcount <= 0;  
-        else if (hcount == hframe-1) 
+        else if (hcount == hframe - 1) 
         begin       
-            if (vcount == vframe-1)  
+            if (vcount == vframe - 1)  
                 vcount <= 0;  
             else  
-                vcount <= vcount+1;  
+                vcount <= vcount + 1;  
         end  
         else  
             vcount <= vcount;  

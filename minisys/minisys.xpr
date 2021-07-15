@@ -36,69 +36,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/classfiles/minisys2.0/switchs.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/classfiles/minisys2.0/memorio.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/classfiles/minisys2.0/leds.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/classfiles/minisys2.0/ioread.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/classfiles/minisys2.0/ifetc32.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/classfiles/minisys2.0/idecode32.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/classfiles/minisys2.0/executs32.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/classfiles/minisys2.0/dmemory32.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/classfiles/minisys2.0/control32.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/VGA char display/vga_display.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/VGA char display/vga_display.v"/>
@@ -108,8 +45,81 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/classfiles/minisys2.0/switchs.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/classfiles/minisys2.0/memorio.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/classfiles/minisys2.0/leds.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/classfiles/minisys2.0/ioread.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/classfiles/minisys2.0/ifetc32.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/classfiles/minisys2.0/idecode32.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/classfiles/minisys2.0/executs32.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/classfiles/minisys2.0/dmemory32.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/classfiles/minisys2.0/control32.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/classfiles/minisys2.0/minisys.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -129,7 +139,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="minisys"/>
+        <Option Name="TopModule" Val="vga_char_display"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -138,6 +148,12 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/classfiles/minisys2.0/xdc/minisys.xdc"/>
           <Attr Name="ImportTime" Val="1517213056"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/new/vga_output.xdc">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -246,6 +262,18 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk.veo"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk.xml"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk.xdc"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk_stub.v"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk.v"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk_board.xdc"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="cpuclk_clk_wiz.v"/>
+        <CompFileExtendedInfo CompFileName="cpuclk.xci" FileRelPathName="doc/clk_wiz_v5_2_changelog.txt"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="cpuclk"/>
@@ -259,23 +287,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="synth/prgrom.vhd"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgrom_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="sim/prgrom.vhd"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="summary.log"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgrom.mif"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgrom.veo"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgrom.vho"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="doc/blk_mem_gen_v8_3_changelog.txt"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgmip32.coe"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgrom.xml"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgrom_sim_netlist.vhdl"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgrom_sim_netlist.v"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgrom_stub.vhdl"/>
-        <CompFileExtendedInfo CompFileName="prgrom.xci" FileRelPathName="prgrom_stub.v"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="prgrom"/>

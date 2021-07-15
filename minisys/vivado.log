@@ -2,10 +2,10 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Mon Jul 12 22:04:26 2021
-# Process ID: 16944
+# Start of session at: Thu Jul 15 15:48:56 2021
+# Process ID: 408
 # Current directory: F:/.vscode/Github/MIPS32_CPU/minisys
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15400 F:\.vscode\Github\MIPS32_CPU\minisys\minisys.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21244 F:\.vscode\Github\MIPS32_CPU\minisys\minisys.xpr
 # Log file: F:/.vscode/Github/MIPS32_CPU/minisys/vivado.log
 # Journal file: F:/.vscode/Github/MIPS32_CPU/minisys\vivado.jou
 #-----------------------------------------------------------
@@ -16,6 +16,52 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 826.789 ; gain = 203.926
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 791.203 ; gain = 178.063
+set_property top vga_char_display [current_fileset]
+update_compile_order -fileset sources_1
+file mkdir F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/new
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/new/vga_output.xdc
+close [ open F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/new/vga_output.xdc w ]
+add_files -fileset constrs_1 F:/.vscode/Github/MIPS32_CPU/minisys/minisys.srcs/constrs_1/new/vga_output.xdc
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs cpuclk_synth_1]
+set_property needs_refresh false [get_runs prgrom_synth_1]
+set_property needs_refresh false [get_runs ram_synth_1]
+set_property needs_refresh false [get_runs cpuclk_impl_1]
+set_property needs_refresh false [get_runs prgrom_impl_1]
+set_property needs_refresh false [get_runs ram_impl_1]
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs cpuclk_synth_1]
+set_property needs_refresh false [get_runs prgrom_synth_1]
+set_property needs_refresh false [get_runs ram_synth_1]
+set_property needs_refresh false [get_runs cpuclk_impl_1]
+set_property needs_refresh false [get_runs prgrom_impl_1]
+set_property needs_refresh false [get_runs ram_impl_1]
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs cpuclk_synth_1]
+set_property needs_refresh false [get_runs prgrom_synth_1]
+set_property needs_refresh false [get_runs ram_synth_1]
+set_property needs_refresh false [get_runs cpuclk_impl_1]
+set_property needs_refresh false [get_runs prgrom_impl_1]
+set_property needs_refresh false [get_runs ram_impl_1]
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs cpuclk_synth_1]
+set_property needs_refresh false [get_runs prgrom_synth_1]
+set_property needs_refresh false [get_runs ram_synth_1]
+set_property needs_refresh false [get_runs cpuclk_impl_1]
+set_property needs_refresh false [get_runs prgrom_impl_1]
+set_property needs_refresh false [get_runs ram_impl_1]
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs cpuclk_synth_1]
+set_property needs_refresh false [get_runs prgrom_synth_1]
+set_property needs_refresh false [get_runs ram_synth_1]
+set_property needs_refresh false [get_runs cpuclk_impl_1]
+set_property needs_refresh false [get_runs prgrom_impl_1]
+set_property needs_refresh false [get_runs ram_impl_1]
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 12 22:06:30 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 15 16:02:36 2021...
